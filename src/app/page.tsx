@@ -49,7 +49,7 @@ export default function Home() {
 
     const index=id
     const newItem :any = itemData.filter((item:any) => item.id!== id)
-    console.log("this is",newItem)
+    //console.log("this is",newItem)
 
     const newTask={
       id:id,
@@ -62,10 +62,9 @@ export default function Home() {
       ...newItem.slice(index,newItem.length)
        
     ]
-    console.log("welcome",newList)
-   setItemData(newList)
-    
-    setEditable(false)
+    //console.log("welcome",newList)
+     setItemData(newList)
+     setEditable(false)
     
   }
  
@@ -110,8 +109,8 @@ export default function Home() {
                       id={itr.id}
                       deleteItem={deleteItem}
                       editable={editable}
-                       setEditable={setEditable}
-                       handleUpdate={handleUpdate}
+                      setEditable={setEditable}
+                      handleUpdate={handleUpdate}
                     
                                       />
                   );

@@ -17,7 +17,7 @@ function TodoItem(props: any) {
    function handleUpdate_2(){
       props.handleUpdate(updateItem,props.id)
 
-    }
+    } 
     
 
 
@@ -32,7 +32,7 @@ function TodoItem(props: any) {
           placeholder={props.item}
           onChange={updateTodo}
           value={updateItem}
-          className="rounded-md px-4 py-1  bg-slate-600"
+          className="rounded-md px-4 py-1  bg-slate-600 w-3/4"
         />
         
         ): (<li className="  px-4 ">{props.item}</li>)}
@@ -55,8 +55,11 @@ function TodoItem(props: any) {
         )}
         
       </div>
-      <div className="flex align-center text-red-700 ">
-        <button onClick={editTodo}>Edit</button>
+      <div className="flex align-center text-red-700 rounded-md">
+         <button className=" bg-slate-50 px-2 rounded-lg mt-1 h-[90%]  shadow-slate-50"
+               onClick={editTodo}>
+                Edit   
+          </button>
       </div>
     </div>
   );

@@ -13,7 +13,7 @@ function SearchTodo(props:any) {
         onChange={props.checkTodo}
         value={props.searchItem}
     
-        />
+        /> 
        
     </div>
   )
