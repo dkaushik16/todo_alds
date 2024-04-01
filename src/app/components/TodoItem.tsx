@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+ import React, { useState } from "react";
 
-function TodoItem(props: any) {
+ function TodoItem(props: any) {
 
   const [updateItem,setUpdateitem]=useState("")
   const [editInfo, setEditinfo]=useState(null)
@@ -15,7 +15,7 @@ function TodoItem(props: any) {
     setUpdateitem(event.target.value);
   }
 
- function handleUpdate_2(){
+  function handleUpdate_2(){
       setEditinfo(null)
       props.handleUpdate(updateItem,props.id)
 
@@ -70,7 +70,7 @@ function TodoItem(props: any) {
           </button>
       </div>
     </div>
-  );
-}
+   );
+ }
 
-export default TodoItem;
+ export default TodoItem;

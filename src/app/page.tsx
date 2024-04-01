@@ -111,7 +111,6 @@ export default function Home() {
                       editable={editable}
                       setEditable={setEditable}
                       handleUpdate={handleUpdate}
-                    
                                       />
                   );
                 })}
